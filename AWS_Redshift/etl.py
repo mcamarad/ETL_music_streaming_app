@@ -4,12 +4,28 @@ from sql_queries import copy_table_queries, insert_table_queries
 
 
 def load_staging_tables(cur, conn):
+    """
+    Copy data from csv files to staging tables. 
+
+    Parameters: 
+    cur (Cursor.object): Cursor for copying data 
+    conn (Connection.object): Connection to database
+
+    """
     for query in copy_table_queries:
         cur.execute(query)
         conn.commit()
 
 
 def insert_tables(cur, conn):
+    """
+    Inserts data from the staging tables into the fact and dimension tables
+
+    Parameters: 
+    cur (Cursor.object): Cursor for copying data 
+    conn (Connection.object): Connection to database
+
+    """
     for query in insert_table_queries:
         cur.execute(query)
         conn.commit()
