@@ -7,6 +7,7 @@ In this repository, there are to example of an ETL pipeline and Database design 
 * **[PostgreSQL](PostgreSQL)**: Folder containing SQL oriented ETL pipeline.
 * **[Cassandra](Cassandra)**:  Folder containing No-SQL ETL pipeline.
 * **[AWS Redshift](AWS_Redshift)**:  Folder containing AWS Redshift-based ETL pipeline.
+* **[Spark](Spark)**:  Folder containing Spark-based ETL pipeline.
 
 
 # Dataset used
